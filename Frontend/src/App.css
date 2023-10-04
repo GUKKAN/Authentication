@@ -1,0 +1,111 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  text-align: center;
+  margin-top: 10%;
+  border: 2px solid #ff6ec4;
+  padding: 20px;
+  width: 40%;
+  margin-left: 30%;
+  transition: transform 0.3s ease; /* Add a smooth transition for hover effect */
+  border-radius: 30px;
+}
+
+.container:hover {
+  transform: scale(1.02); /* Add a slight zoom effect on hover */
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333; /* Darken the heading color */
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc; /* Add a border to input fields */
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-color: #ff6ec4; /* Change border color on focus */
+}
+
+button.reg {
+  padding: 10px 20px;
+  background-color: #ff6ec4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+button.reg:hover {
+  background-color: #ff4f9a;
+}
+
+/* Modal */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.success-message {
+  font-size: 24px;
+  color: #4CAF50;
+  margin-top: 20px;
+}
+
+/* Style for the Registration button */
+.reg {
+  background-color: #008CBA;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.reg:hover {
+  background-color: #0076a3; /* Darken button color on hover */
+}
+
+/* Additional styles can be added to match your design preferences */
